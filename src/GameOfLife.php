@@ -59,13 +59,15 @@ class GameOfLife
         return $count;
     }
 
-    public function setCellAlive($row, $col) {
+    public function setCellAlive($row, $col)
+    {
         if (isset($this->matrix[$row][$col])) {
             $this->matrix[$row][$col] = self::ALIVE;
         }
     }
 
-    public function setCellDead($row, $col) {
+    public function setCellDead($row, $col)
+    {
         if (isset($this->matrix[$row][$col])) {
             $this->matrix[$row][$col] = self::DEAD;
         }
